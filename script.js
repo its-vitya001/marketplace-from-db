@@ -1,4 +1,4 @@
-const API_URL = "https://my-json-server.typicode.com/blacksempai/marketplace/db"
+const API_URL = "https://my-json-server.typicode.com/its-vitya001/marketplace-from-db/db"
 
 async function getProductsDb () {
     const response = await fetch(API_URL);
@@ -32,7 +32,7 @@ async function renderProductsCard () {
             <a class="seller-profile-link" href="#">Seller Profile</a>
             <button class="buy-button">Buy</button>
         `;
-        
+
         main.append(card)
     });
 }
