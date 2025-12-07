@@ -25,8 +25,8 @@ async function renderProductsCard () {
                 ${product.price}
             </p>
             <p class="description">
-            <spand class="sub-item">Description:</span> 
-            ${product.description}
+                <span class="sub-item">Description:</span> 
+                ${product.description}
             </p>
 
             <a class="seller-profile-link" href="#">Seller Profile</a>
