@@ -41,7 +41,31 @@
         },
         {
             "id": 3,
-            "name": "ESP8266 5V",
+            "name": "ESP8266 5V II",
+            "description": "This wireless relay is based on the AI-Thinker ESP-01S WIFI module.",
+            "price": 300,
+            "author_id": 2,
+            "photo_url": "https://raw.githubusercontent.com/blacksempai/marketplace/master/img/wifi.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "LED display II",
+            "description": "Can display 2-lines X 16-characters. Operate with 5V DC.",
+            "price": 92,
+            "author_id": 1,
+            "photo_url": "https://raw.githubusercontent.com/blacksempai/marketplace/master/img/led.jpeg"
+        },
+        {
+            "id": 5,
+            "name": "Arduino UNO II",
+            "description": "Brand new and high quality.",
+            "price": 180,
+            "author_id": 3,
+            "photo_url": "https://raw.githubusercontent.com/blacksempai/marketplace/master/img/arduino.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "ESP8266 5V II",
             "description": "This wireless relay is based on the AI-Thinker ESP-01S WIFI module.",
             "price": 300,
             "author_id": 2,
