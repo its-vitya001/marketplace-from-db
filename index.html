@@ -7,7 +7,23 @@
     <title>Marketplace | Main</title>
 </head>
 <body>
+    <nav>
+        <h1>Robocode Marketplace</h1>
+        <div class="buttons-container">
+            <div class="cart-container">
+                <button id="cart-button">🛒</button>
+                <div id="cart-item" hidden>
+                    <div id="cart-products"></div>
+                    <div id="cart-info">
+                        <p>Total price: <span id="total-price">0</span>$</p>
+                        <button>Buy TS 🙏🏿</button>
+                    </div>
+                </div>
+            </div>
+            <button id="profile-button">👤</button>
+        </div>
+    </nav>
     <main id="main"></main>
-    <script src="./script.js"></script>
+    <script src="./scripts/main.js" type="module"></script>
 </body>
 </html>

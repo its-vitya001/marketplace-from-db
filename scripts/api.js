@@ -1,4 +1,4 @@
-const API_URL = "https://my-json-server.typicode.com/its-vitya001/marketplace-from-db/db"
+const API_URL = "https://my-json-server.typicode.com/its-vitya001/marketplace-from-db/db";
 
 async function getProducts () {
     const response = await fetch(API_URL);
@@ -9,8 +9,8 @@ async function getProducts () {
 getProducts().then(data => console.log(data))
 
 const main = document.getElementById("main");
-
-async function renderProductsCard () {
+export let cart = [];
+export async function renderProductsCard () {
     const products = await getProducts();
 
     for (let i = 0; i < 2; i++) {
@@ -34,8 +34,18 @@ async function renderProductsCard () {
                 <button class="buy-button">Buy</button>
             `;
     
-            main.append(card)
+            main.append(card);
+            
+            const buyButton = card.querySelector('.buy-button');
+            buyButton.addEventListener('click', function () {
+                cart.push({
+                    name: product.name,
+                    price: product.price,
+                    img: product.photo_url
+                });
+                console.log(cart);
+            });
+
         });
     }
 }
-renderProductsCard()
