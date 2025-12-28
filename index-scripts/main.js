@@ -1,7 +1,7 @@
 import * as ui from "./ui.js";
 import * as api from "./api.js";
 
-api.renderProductsCard();
+ui.renderProducts();
 
 const buyButtons = document.querySelectorAll(".buy-button");
 console.log(buyButtons)
